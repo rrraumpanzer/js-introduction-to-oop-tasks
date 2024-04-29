@@ -15,7 +15,9 @@ Point.prototype.getY = function getY() {
 Point.prototype.toString = function toString() {
     return `(${this.getX()}, ${this.getY()})`;
   };
-
+Segment.prototype.toString = function toString() {
+  return `[${this.beginPoint.toString()}, ${this.endPoint.toString()}]`;
+}
 // END
 
 export function Segment(beginPoint, endPoint) {
